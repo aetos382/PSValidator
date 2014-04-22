@@ -3,15 +3,17 @@
     using System;
     using System.Linq;
     using System.Management.Automation;
+    using System.Management.Automation.Internal;
 
     using PSValidator.Properties;
 
-    public class ValidateNotNullOrEmptyStringAttribute :
+    [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
+    public sealed class ValidateNotNullOrEmptyStringAttribute :
         ValidateEnumeratedArgumentsAttribute
     {
         protected override void ValidateElement(object element)
         {
-            if (element == null)
+            if (element == null || element == AutomationNull.Value)
             {
                 throw new ValidationMetadataException(Resources.ArgumentIsNull);
             }
@@ -22,7 +24,7 @@
                 throw new ValidationMetadataException(Resources.ArgumentIsNotString);
             }
 
-            if (value.Length == 0)
+            if (string.IsNullOrEmpty(value))
             {
                 throw new ValidationMetadataException(Resources.ArgumentIsEmptyString);
             }

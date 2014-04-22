@@ -126,4 +126,13 @@
   <data name="ArgumentIsNull" xml:space="preserve">
     <value>引数が null です。引数に有効な値を指定して、コマンドを再度実行してください。</value>
   </data>
+  <data name="PathNotContainer" xml:space="preserve">
+    <value>PathType.Container が指定されましたが、パス '{0}' はコンテナー オブジェクトではありません。</value>
+  </data>
+  <data name="PathNotExists" xml:space="preserve">
+    <value>パス '{0}' は存在しません。</value>
+  </data>
+  <data name="PathNotLeaf" xml:space="preserve">
+    <value>PathType.Leaf が指定されましたが、パス '{0}' はリーフ オブジェクトではありません。</value>
+  </data>
 </root>

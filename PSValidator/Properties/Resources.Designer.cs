@@ -86,5 +86,32 @@ namespace PSValidator.Properties {
                 return ResourceManager.GetString("ArgumentIsNull", resourceCulture);
             }
         }
+        
+        /// <summary>
+        ///   PathType.Container was specified, but path &apos;{0}&apos; is not a container object. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string PathIsNotContainer {
+            get {
+                return ResourceManager.GetString("PathIsNotContainer", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   PathType.Leaf was specified, but path &apos;{0}&apos; is not a leaf object. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string PathIsNotLeaf {
+            get {
+                return ResourceManager.GetString("PathIsNotLeaf", resourceCulture);
+            }
+        }
+        
+        /// <summary>
+        ///   Path &apos;{0}&apos; does not exist. に類似しているローカライズされた文字列を検索します。
+        /// </summary>
+        internal static string PathNotExists {
+            get {
+                return ResourceManager.GetString("PathNotExists", resourceCulture);
+            }
+        }
     }
 }
