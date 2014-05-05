@@ -99,5 +99,11 @@
                 }
             }
         }
+
+        public override string ToString()
+        {
+            return string.Format("[{0}(PathType = {1:G}, LiteralPath = {2})]",
+                this.GetType().Name, this.PathType, this.LiteralPath);
+        }
     }
 }
