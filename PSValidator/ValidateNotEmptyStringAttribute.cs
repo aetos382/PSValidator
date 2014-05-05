@@ -8,7 +8,7 @@
     using PSValidator.Properties;
 
     [AttributeUsage(AttributeTargets.Property | AttributeTargets.Field)]
-    public sealed class ValidateNotNullOrEmptyStringAttribute :
+    public sealed class ValidateNotEmptyStringAttribute :
         ValidateEnumeratedArgumentsAttribute
     {
         protected override void ValidateElement(object element)

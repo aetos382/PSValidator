@@ -50,7 +50,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
-    <Compile Include="ValidateNotNullOrEmptyStringAttribute.cs" />
+    <Compile Include="ValidateNotEmptyStringAttribute.cs" />
     <Compile Include="ValidatePathAttribute.cs" />
   </ItemGroup>
   <ItemGroup>
